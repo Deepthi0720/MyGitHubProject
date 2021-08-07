@@ -1,0 +1,227 @@
+1. Canvas
+2. Document Object model
+3. 404
+4. HTML web storage object 
+5. 11 hits
+6.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+</head>
+<body>
+<form method=post>
+<table border=1>
+<tr>
+<td>Username</td>
+<td><input type="text" name="user" size=30></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" name="pwd" size=30></td>
+</tr>
+</table>
+<input type="checkbox" id="remember" name="remember">
+<label for="remember">Remember me</label><br/></label>
+<p style="margin-left=100px;"><input type="Button" value="Login"></p>
+</form>
+</body>
+</html>
+7.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+</head>
+<body>
+<div class="container">
+username<input type="text" id="num1"><br/>
+password<input type="password" id="num2"><br/>
+</div>
+<input type="checkbox">Remember me
+<p style="margin-left:100px;"><input type="button" value="Login"></p>
+</body>
+</html>
+8.
+ <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+ }
+ * {
+box-sizing: border-box;
+ }
+/* Style inputs */
+input[type=text], select, textarea {
+width: 100%;
+ padding: 12px;
+ border: 1px solid #ccc;
+margin-top: 6px;
+margin-bottom: 16px;
+ resize: vertical;
+}
+ input[type=submit] {
+ background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+ border: none;
+cursor: pointer;
+}
+ input[type=submit]:hover {
+background-color: #45a049;
+ }
+.container { 
+/* Style the container section */
+ border-radius: 5px;
+background-color: #f2f2f2;
+padding: 10px;
+ }
+ .column {
+ /* Create two columns that float next to eachother */
+ float: left;
+ width: 50%;
+margin-top: 6px;
+ padding: 20px;
+ }
+  .row:after {
+/* Clear floats after the columns */
+content: "";
+display: table;
+clear: both;
+ }
+ .button {
+border: none;
+color: white;
+padding: 15px 32px;
+ text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+ }
+ .button2 {
+ background-color: #008CBA;
+} /* Blue */
+.b {
+background-color: #008CBA;
+ } 
+ @media screen and (max-width: 600px) {
+ .column, input[type=submit] {
+width: 100%;
+margin-top: 0;
+ }
+ }
+</style>
+ </head>
+<body>
+<div class="container">
+ <div style="text-align:center">
+<button class="button button2" style="text-align:center" type="button" onclick="alert('Hello world!')">Signin with Linkedin!</button>
+<h5 style="text-align:center">Autofill your information.</h5>
+</div>
+ <div class="row">
+<div class="column">
+ <form action="/action_page.php">
+ <label for="fname">First Name</label>
+<input type="text" id="fname" name="firstname" >
+<label for="email">Email Address</label>
+ <input type="email" id="email" name="email" >
+<label for="name">Company Name</label>
+<input type="text" id="name" name="name" >
+<label for="industry">Your industry</label>
+ <select id="industry" name="industry">
+ <option value="IT">IT</option>
+ <option value="paper">paper</option>
+ <option value="sales">Sales</option>
+</select>
+<label for="refer">Referd By</label>
+<select id="refer" name="refer">
+<option value="lti">LTI</option>
+<option value="x">x</option>
+<option value="y">y</option>
+</select>
+</form>
+</div>
+<div class="column">
+ <form action="/action_page.php">
+<label for="lname">Last Name</label>
+ <input type="text" id="lname" name="lastname" >
+<label for="contact">Contact Number</label>
+<input type="text" id="contact" name="contact" >
+<label for="tech">Services/Technologies interested in</label>
+ <select id="tech" name="tech">
+<option value="Cloud computing">Cloud computing</option>
+<option value="AWS">AWS</option>
+<option value="c">C</option>
+<option value="java">Java</option>
+ </select>
+<label for="country">Country</label>
+ <select id="country" name="country">
+ <option value="India">India</option>
+<option value="Japan">Japan</option>
+<option value="usa">USA</option>
+</select>
+ <label for="subject">Let us know how we can help you today </label>
+ <textarea id="subject" name="subject" style="height:170px"></textarea>
+ <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1">I agree to receive communication from Lti .Refer LTI Privacy Policy to know more about how we maintain privacy about your data.</label><br>
+ <input class="button b" type="submit" value="Submit">
+ </form>
+ </div>
+ </div>
+ </div>
+</body>
+ </html>
+9.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+</head>
+<body>
+<progress value="0.5">Step 3 of 6</progress><br/>
+<input type="number"><br/>
+<input type="range"><br/>
+Title:<input list="title-list"><br/>
+<datalist id="title-list">
+    <option value="Dr.">
+    <option value="Mr.">
+    <option value="Mrs.">
+</datalist>
+</body>
+</html>
+
+10.
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function multiply(){
+var one=parseInt(document.getElementById("num1").value);
+var two=parseInt(document.getElementById("num2").value);
+document.getElementById("result").innerHTML=one*two;
+}
+function divide(){
+var one=parseInt(document.getElementById("num1").value);
+var two=parseInt(document.getElementById("num2").value);
+document.getElementById("result").innerHTML=one/two;
+}
+</script>
+<title>Form</title>
+</head>
+<body>
+<form>
+<input type="text" id="num1"><br/>
+<input type="text" id="num2"><br/>
+<button onclick="multiply()">Multiply</button>
+<button onclick="divide()">Divide</button>
+<p>The Result is:</p>
+<p id="result"> </p>
+</form>
+</body>
+</html>  
